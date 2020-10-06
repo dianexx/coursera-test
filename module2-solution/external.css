@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+	background-color: #DBE5E1;
+}
+
+h1 {
+	font-family: helvetica, arial, sansserif;
+	margin-top: 15px;
+	margin-bottom: 50px;
+}
+
+
+.box {
+  border: 1px solid black;
+  background-color: #E9CCB1;
+  margin: 5px 10px 15px 10px;
+}
+
+#grad1{
+	background-color: #1EAE98;
+	background-image: linear-gradient(#D8B5FF, #1EAE98);
+}
+
+#grad2{
+	background-color: #1EAE98;
+	background-image: linear-gradient(#00B7FF, #FFFFC7);
+}
+
+#grad3{
+	background-color: #1EAE98;
+	background-image: linear-gradient(#F1EAB9, #FF8C8C);
+}
+
+.header{
+  float: right;
+  position: relative;
+  right: -1px;
+  top: -1px;
+  min-width: 130px;
+  text-align: center;
+  margin: 0px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  padding: 5px;
+  color: #000000;
+  font-size: 125%;
+}
+
+.recipe {
+  clear: right;
+  height: 300px;
+  text-align: justify;
+  width: 95%; 
+  padding-right: 5%;  
+  margin-right: 0px;
+  margin-left: auto;
+  margin-top:10px;
+  color: black;
+  overflow: auto;
+}
+
+.row {
+  width: 100%;
+}
+
+
+/*** D E S K T O P ***/
+@media (min-width: 992px) {
+  .menu-d1, .menu-d2, .menu-d3{
+    float: left;
+    border: 1px;
+  }
+  .menu-d1 {
+    width: 33.33%;
+  }
+  .menu-d2 {
+    width: 66.66%;
+  }
+  .menu-d3{
+    width: 100%;
+  }
+}
+
+/*** T A B L E T ***/
+@media (min-width: 768px) and (max-width: 991px) {
+  .menu-m1, .menu-m2 {
+    float: left;
+    border: 1px;
+  }
+  .menu-m1 {
+    width: 50%;
+  }
+  .menu1-m2 {
+    width: 100%;
+  }
+}
+
+/*** P H O N E ***/
+@media (max-width: 767px) {
+  .menu-p1 {
+    float: left;
+    border: 1px;
+
+  }
+
+
+}
