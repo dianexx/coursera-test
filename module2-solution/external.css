@@ -10,6 +10,8 @@ h1 {
 	font-family: helvetica, arial, sansserif;
 	margin-top: 15px;
 	margin-bottom: 50px;
+	font-size: 300%;
+	color: #3C9DBC;
 }
 
 
@@ -21,7 +23,7 @@ h1 {
 
 #grad1{
 	background-color: #1EAE98;
-	background-image: linear-gradient(#D8B5FF, #1EAE98);
+	background-image: linear-gradient(#D9FFE8, #FECBC5);
 }
 
 #grad2{
