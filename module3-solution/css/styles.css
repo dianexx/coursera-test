@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+	background-color: #DBE5E1;
+}
+
+h1 {
+	font-family: helvetica, arial, sansserif;
+	margin-top: 15px;
+	margin-bottom: 50px;
+	font-size: 300%;
+	color: #3C9DBC;
+}
+
+div > h1 {
+  color: #3C9DBC;
+}
+
+
+.box {
+  border: 1px solid black;
+  background-color: #E9CCB1;
+  margin: 5px 10px 15px 10px;
+}
+
+#grad1{
+	background-color: #1EAE98;
+	background-image: linear-gradient(#D9FFE8, #FECBC5);
+}
+
+#grad2{
+	background-color: #1EAE98;
+	background-image: linear-gradient(#00B7FF, #FFFFC7);
+}
+
+#grad3{
+	background-color: #1EAE98;
+	background-image: linear-gradient(#F1EAB9, #FF8C8C);
+}
+
+.header{
+  float: right;
+  position: relative;
+  right: -1px;
+  top: -1px;
+  min-width: 130px;
+  text-align: center;
+  margin: 0px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  padding: 5px;
+  color: #000000;
+  font-size: 125%;
+}
+
+.recipe {
+  clear: right;
+  height: 300px;
+  text-align: justify;
+  width: 95%; 
+  padding-right: 5%;  
+  margin-right: 0px;
+  margin-left: auto;
+  margin-top:10px;
+  color: black;
+  overflow: auto;
+}
+
+.row {
+  width: 100%;
+}
+
+/* HEADER */
+#header-nav {
+  background-color: #E9CCB1;
+  border-radius: 0;
+  border: 0;
+  overflow: hidden;
+}
+
+.navbar-brand {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.navbar-brand h1 { /* Company's name */
+  font-family: 'Lora', serif; 
+  color: rgb(0,0,0);
+  font-size: 1.8em;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 20px;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-brand h2 { /* Our Menu */
+  color: #000;
+  font-weight: bold;
+  font-size: .7em;
+  text-align: center;
+  margin-top: 15px;
+}
+
+#nav-list {  /* #nav-list is the <ul> under the navbar section */
+  margin-top: 10px;
+}
+#nav-list a { /* this is for link/glyphicon color and aligning to center */
+  color: #3C9DBC;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid black;
+  background-color: #DBE5E1;
+}
+#nav-list a:hover { /* this is for changing mouse pointer when it goes over glyphicon */
+  background: #3C9DBC;
+}
+#nav-list a span { /* for font options of navigation list elements */
+  font-size: 1.2em;
+}
+
+p .text-center {
+  margin-top: 30px;
+}
+
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #000000;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px; /* This is for 'Computers' message to be in the top part, to override 'float' collapsing feature */
+}
+/* END HEADER */
+
+/*** D E S K T O P ***/
+@media (min-width: 992px) {
+  .menu-d1, .menu-d2, .menu-d3{
+    float: left;
+    border: 1px;
+  }
+  .menu-d1 {
+    width: 33.33%;
+  }
+  .menu-d2 {
+    width: 66.66%;
+  }
+  .menu-d3{
+    width: 100%;
+  }
+}
+
+/*** T A B L E T ***/
+@media (min-width: 768px) and (max-width: 991px) {
+  .menu-m1, .menu-m2 {
+    float: left;
+    border: 1px;
+  }
+  .menu-m1 {
+    width: 50%;
+  }
+  .menu1-m2 {
+    width: 100%;
+  }
+}
+
+/*** P H O N E ***/
+@media (max-width: 767px) {
+  .menu-p1 {
+    float: left;
+    border: 1px;
+
+  }
+
+
+}
